@@ -1,0 +1,139 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>classwork10</title>
+        <style>
+             * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            width: 100%;
+         /*    height: 100%; */
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        html {
+            width: 100%;
+            height: 100%;
+        }
+        .top {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: right;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+        }
+        .topp {
+            font-size: 20px;
+        }
+        .left {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-direction: column;
+        width: 18%;
+        flex-wrap: wrap;
+        padding-right: 2%;
+        }
+        .grayline {
+            padding-bottom: 10px;
+            border-bottom: 2px solid gray;
+        }
+        .center {
+    /*     display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-direction: column; */
+        width: 60%;
+     /*    flex-wrap: wrap; */
+        }
+        .center img:nth-of-type(1) {
+            width: 100%;
+        }
+        .icons {
+            width: 100px;
+        }
+        .right {
+/*         display: flex;
+        justify-content: space-evenly;
+        align-items: left;
+        flex-direction: column; */
+        width: 18%;
+/*         flex-wrap: wrap; */
+     /*    padding-left: 2%; */
+        }
+        .person {
+            width: 100%;
+        }
+        @media screen and (max-width: 960px) {
+            .center {
+            width: 70%;   
+            }
+            .right, .left {
+                width: 30%;
+            }
+        }
+        @media screen and (max-width: 560px) {
+            .center {
+                width: 100%;
+                order: 1;
+            }
+            .left {
+                width: 100%;
+                order:2;
+            }
+            .right {
+                width: 100%;
+                order:3;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <h1 class="media">Media</h1>
+            <p class="topp">Home</p>
+            <p class="topp">News</p>
+            <p class="topp">Gallery</p>
+            <p class="topp">Contact</p>
+        </div>
+        <div class="left">
+            <h1>Last news</h1>
+            <h2>BUSINESS</h2>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p class="gray">Lorem, ipsum.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus non mollitia debitis!</p>
+            <p class="grayline">2 HOURS AGO</p>
+            <p class="gray">ART</p>
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p class="gray">Lorem, ipsum dolor.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, a ipsa.</p>
+            <p class="grayline">4 HOURS AGO</p>
+        </div>
+        <div class="center">
+            <h1>Lorem ipsum dolor sit.</h1>
+            <p class="gray">by Lorem, ipsum.</p>
+            <img src="urbanization.jpg" alt="city picture">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam modi dignissimos doloribus cum neque nesciunt ex, mollitia quae rerum culpa, delectus beatae voluptates cumque nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima sunt eum labore assumenda voluptas voluptatem amet? Quisquam, amet non. Aspernatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic, libero distinctio impedit deleniti dolores, alias eius consectetur non harum voluptate adipisci natus possimus. Tempora eligendi laboriosam voluptate veniam error quod reiciendis ea blanditiis eos explicabo.</p>
+            <img src="./social_icons.png" alt="social icons" class="icons">
+        </div>
+        <div class="right">
+            <h1 class="grayline">Osed Accusamus</h1>
+            <img src="./unnamed.png" alt="person" class="person">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas consectetur debitis rem.</p>
+            <p class="grayline">Lorem ipsum dolor sit.</p>
+            <img src="./unnamed.png" alt="person" class="person">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint beatae a odio?</p>
+            <p class="grayline">by Lorem, ipsum.</p>
+        </div>
+    </body>
+    </html>
